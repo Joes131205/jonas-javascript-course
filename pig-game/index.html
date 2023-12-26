@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Pig Game</title>
+  </head>
+  <body>
+    <button class="btn btn--rules">RULES</button>
+    <main>
+      <section class="player player--0 player--active">
+        <h2 class="name" id="name--0">Player 1</h2>
+        <p class="score" id="score--0">0</p>
+        <div class="current">
+          <p class="current-label">Current</p>
+          <p class="current-score" id="current--0">0</p>
+        </div>
+      </section>
+      <section class="player player--1">
+        <h2 class="name" id="name--1">Player 2</h2>
+        <p class="score" id="score--1">0</p>
+        <div class="current">
+          <p class="current-label">Current</p>
+          <p class="current-score" id="current--1">0</p>
+        </div>
+      </section>
+
+      <img class="dice" />
+      <button class="btn btn--new">🔄 New game</button>
+      <button class="btn btn--roll">🎲 Roll dice</button>
+      <button class="btn btn--hold">📥 Hold</button>
+    </main>
+    <section class="rules">
+      <button class="btn rules--close">&times;</button>
+      <br />
+      <h2>Rules</h2>
+      <br />
+      <p>
+        The rules are pretty simple, all you need to do is to reach 100 points!
+      </p>
+      <br />
+      <p>
+        Press "🎲 Roll dice" to roll a dice, the dice number will be your
+        points, the points will be accumulated on "CURRENT" Section.
+      </p>
+      <br />
+      <p>
+        If you are satisfied with the current score, you can hold it by pressing
+        "📥 Hold" button and the current points will be added to the total
+        points and it will switch the current player.
+      </p>
+      <br />
+      <p>
+        Don't be too greedy tho, rolling "1" will reset your CURRENT score back
+        to 0 and you will be switched to another player :)
+      </p>
+    </section>
+    <div class="overlay"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
